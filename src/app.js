@@ -51,7 +51,6 @@ app.get('', (req, res) => {
 app.get('/about',(req, res) => {
     res.render('about', {
         title: 'About',
-        description: 'This app is powered by Dark Sky API and Mapbox API. Technology used: Node.js for backend server and Handlebar template engine to render view',
         name: 'Cristien'
     })
 })
