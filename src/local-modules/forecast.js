@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) => {
                  summary: body.daily.data[0].summary,
                  temperature: body.currently.temperature,
                  ChancesOfRain: body.currently.precipProbability,
-                //  `Location: ${body.timezone},\nSummary: ${body.daily.data[0].summary},\nTemperature: ${body.currently.temperature} °C,\nChance Of Rain: ${body.currently.precipProbability} %`
+                 icon: body.currently.icon,
              }
             )
         }

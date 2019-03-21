@@ -41,6 +41,7 @@ footer {
 
 input {
     padding: 20px;
+    margin: 20px;
     width: 30%;
     border: 1px solid #cecece;
 }
@@ -58,3 +59,4 @@ button:hover {
     background: #000;
     color: #fff;
 }
+

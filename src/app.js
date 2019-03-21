@@ -91,6 +91,7 @@ app.get('/weather', (req, res) => {
                 forecast: forecastData.summary,
                 temperature: forecastData.temperature + " degree C",
                 chanceOfRain: forecastData.ChancesOfRain + "%",
+                icon: forecastData.icon,
                 
             })
            
