@@ -89,7 +89,7 @@ app.get('/weather', (req, res) => {
             res.send({
                 location,
                 forecast: forecastData.summary,
-                temperature: forecastData.temperature + " degree C",
+                temperature: forecastData.temperature + " °C",
                 chanceOfRain: forecastData.ChancesOfRain + "%",
                 icon: forecastData.icon,
                 
