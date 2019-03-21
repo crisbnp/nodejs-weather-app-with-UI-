@@ -4,7 +4,7 @@ const path = require('path')
 //constant express and require to grab the library export.
 //What express library exposes is just a single function (not an object). 
 //Therefore we need to call it to create a new express application.
-const express = require('express');
+const express = require('express')
 
 //load hbs in, to config express for handlebars partials
 const hbs = require('hbs')
@@ -16,6 +16,7 @@ const forecast = require('./local-modules/forecast')
 //Express fn does not take any parameters/arguments - 
 //instead we configure the server using various methods provided in application itself
 const app = express();
+const port = process.env.PORT || 3000
 
 // Define paths for Express config
 const publicDirPath = path.join(__dirname, '../public')
@@ -128,7 +129,9 @@ app.get('*', (req, res) => {
     })
 })
 
+
+
 //this start up the server
-app.listen(3000, () => {
-    console.log('Server starts on port 3000')
+app.listen(port, () => {
+    console.log('Server is up on port' + port)
 })
