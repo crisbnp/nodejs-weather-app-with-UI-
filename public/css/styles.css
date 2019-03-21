@@ -40,6 +40,7 @@ footer {
 }
 
 input {
+    font-size: 16px;
     padding: 20px;
     margin: 20px;
     width: 30%;
@@ -47,6 +48,7 @@ input {
 }
 
 button {
+    font-size: 16px;
     padding: 20px;
     width: 100px;
     cursor: pointer;
