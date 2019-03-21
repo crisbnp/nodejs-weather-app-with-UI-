@@ -7,7 +7,6 @@ const input = document.querySelector('.input')
 
 const messageOne = document.querySelector('#msg1')
 const messageTwo = document.querySelector('#msg2')
-const weathericon = document.getElementById("weathericon")
 let skycons = new Skycons({"color": "#eeeee"});
 
 
@@ -20,8 +19,6 @@ weatherForm.addEventListener('submit', (event) => {
     
     fetch('/weather?address=' + location).then((response) => {
     response.json().then((data) =>{
-
-            let icon = '<i class = wi-forecast-io-' + data.icon +"></i>"
 
             if (data.error) {
                 console.log(data.error)
